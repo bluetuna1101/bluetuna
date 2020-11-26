@@ -1,4 +1,6 @@
-/* reset */
+/*===========================================================================
+	RESET
+============================================================================*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -14,29 +16,35 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video, button, input, br ,textarea {margin:0;padding:0;border:0;box-sizing:border-box; color:#444; line-height:1.2; letter-spacing:-0.36px;}
 
 .header {
-    height: 100px;
+    height: 100px; 
+    border-bottom: 1px solid #979797; 
     padding: 35px 0;
-    background: rgb(128, 181, 202);
 }
 .banner {
-    background: darkblue;
+    background: rgb(31, 44, 44);
     color: white;
-    margin: 0px 0px 73px;
-    padding: 93px 0px 0px;
-    float: left;
+    height: 300px;
+    padding-top: 93px;
+    margin-bottom: 73px;
 }
 .container {
     background: yellowgreen;
-    max-width: 1440px;
-    margin: 0 auto;
+    max-width: 1440px; 
+    margin: 0 auto; 
     padding: 0 20px;
-    float: left;
 }
 .container-left {
-    background: violet;
+    background: orange;
+    height: 210px;
+    width: 340px;
+    margin-right: 100px;
+    float: left;
 }
 .container-right {
     background: tomato;
+    width: 850px;
+    height: 760px;
+    margin-left: 450px;
 }
 .footer {
     background: rgb(7, 7, 37);
