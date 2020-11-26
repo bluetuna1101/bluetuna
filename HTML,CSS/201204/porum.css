@@ -1,0 +1,48 @@
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button, input, br ,textarea {margin:0;padding:0;border:0;box-sizing:border-box; color:#444; line-height:1.2; letter-spacing:-0.36px;}
+
+.header {
+    height: 100px;
+    padding: 35px 0;
+    background: rgb(128, 181, 202);
+}
+.banner {
+    background: darkblue;
+    color: white;
+    margin: 0px 0px 73px;
+    padding: 93px 0px 0px;
+    float: left;
+}
+.container {
+    background: yellowgreen;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    float: left;
+}
+.container-left {
+    background: violet;
+}
+.container-right {
+    background: tomato;
+}
+.footer {
+    background: rgb(7, 7, 37);
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
