@@ -47,17 +47,17 @@ time, mark, audio, video, button, input, br ,textarea {margin:0;padding:0;border
 .left-item1 {
     background: darkblue;
     color: white;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 10px;
     text-align:center;"
 }
 .left-item2 {
     background: white;
-    text-align: center;"
+    text-align: center;
 }
-
 .item2-menu {
     padding: 10px;
+    border-bottom: 1px solid lightgray;
 }
 .container-right {
     background: tomato;
@@ -65,8 +65,22 @@ time, mark, audio, video, button, input, br ,textarea {margin:0;padding:0;border
     height: 760px;
     margin-left: 450px;
 }
+.best {
+    background: white;
+    margin-bottom: 10px;
+}
+.list_ul {
+    margin-bottom: 10px;
+    background: white;
+}
+.list_item {
+    border-bottom: 1px solid lightgray;
+
+}
 .all-right {
     float: right;
+    box-sizing: border-box;
+    background: white;
 }
 .footer {
     background: rgb(7, 7, 37);
