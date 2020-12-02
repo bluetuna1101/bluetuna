@@ -1,0 +1,204 @@
+/*===========================================================================
+	RESET
+============================================================================*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, br ,textarea, button{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing:border-box;
+    list-style: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;900&display=swap');
+
+.header {
+    height: 100px; 
+    border-bottom: 1px solid #979797; 
+    padding: 35px 0;
+}
+.banner {
+    background: rgb(31, 44, 44);
+    color: white;
+    height: 300px;
+    padding-top: 93px;
+    margin-bottom: 73px;
+    font-weight: bolder;
+}
+.banner h1{
+    max-width: 1440px; 
+    margin-left: 30px;
+}
+.container {
+    max-width: 1440px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+    background: whitesmoke;
+}
+.banner-text {
+    font-size: 20px;
+    line-height: 70px;
+    margin-left: 750px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+}
+.container-left {
+    width: 340px;
+    margin-right: 100px;
+    float: left;
+}
+.left-item {
+    text-align: center;
+    font-weight: bolder;
+    margin-left: 30px;
+}
+.item-menu {
+    height: 35px;
+    width: 280px;
+    padding-top: 7px;
+    background: white;
+    color: gray;
+    font-weight: 700;
+    border: 0.3px solid lightgrey;
+}
+
+.container-right {
+    width: 850px;
+    height: 1650px;
+    margin-left: 450px;
+}
+.container-header {
+    height: 35px;
+}
+.search {
+    height: 35px;
+    width: 380px;
+    background: white;
+    border: 1px solid black;
+    float: left;
+}
+.input {
+    border: 0px;
+    height: 29px;
+    width: 360px;
+    font-weight: bolder;
+    font-size: 10px;
+}
+.write {
+    height: 35px;
+    width: 380px;
+    padding-top: 7px;
+    background: black;
+    color: white;
+    font-weight: 700;
+    float: right;
+    text-align: center;
+}
+.best {
+    margin-bottom: 10px;
+    margin-top: 40px;
+    /*position: relative; */
+}
+.all h2 {
+    float: left;
+}
+.list_ul {
+    margin-bottom: 10px;
+    background: white;
+}
+.list_item {
+    padding-bottom: 10px;
+    /**/
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+    border: 0.3px solid lightgrey;
+}
+.list__contents h3{
+    margin-bottom: 10px;
+    font-weight: bolder;
+
+}
+.list__contents p{
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.list__footer{
+    display: block;
+    color: gray;
+}
+
+.list__footer_left {
+    float: left;;
+    padding: 5px 3px;
+    font-size:0.75em;
+    padding: 0px 0px;
+    color: gray;
+}
+
+.list__footer_right {
+    float: right;
+    font-size:0.75em;
+}
+
+/* 선택시 박스 생성
+.category {
+    padding: 5px 10px;
+    background: #ececec;
+    border-radius: 20px;;
+}
+*/
+.footer_left_item {
+    padding: 5px 10px;
+}
+.footer_right_item {
+    padding: 5px 5px;
+}
+.list{
+    /*position: relative;*/
+}
+.all {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.all-left {
+    background: white;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.all-right {
+    /*position: absolute;
+    top:0;
+    right:0; 
+    box-sizing: border-box;*/
+    float: right;
+    font-size: 1em;
+}
+.next {
+    margin-top: 40px;
+}
+.next-item {
+    margin-right: 10px;
+}
+.footer {
+    background: rgb(7, 7, 37);
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
