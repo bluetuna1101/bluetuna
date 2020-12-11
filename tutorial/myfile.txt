@@ -1,4 +1,0 @@
-원숭이도 이해할 수 있는 Git명령어
-add : modify and add to index
-commit : index record
-pull : pull the remote 
