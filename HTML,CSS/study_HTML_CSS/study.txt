@@ -36,4 +36,10 @@ address (block)
 li 는 ul,li 에 자식으로만 사용 가능
 
 p (block) paragraph
-하나의 문단을 설정 
+하나의 문단을 설정 정보통신보조기기 등은 다음문단으로 넘어갈 때
+
+hr (block)
+문단의 분리(주제에 의한)를 위해 설정
+
+span (inline)
+의미 x 글자중간에 스타일 입히기 편리하다
