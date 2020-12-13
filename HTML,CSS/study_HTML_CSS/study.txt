@@ -1,0 +1,39 @@
+block vs inline
+- block : div, h1, p
+1. 사용 가능한 최대 너비를 사용
+2. 크기를 지정할 수 있다
+3. 수직으로 쌓인다
+4. margin padding 위 아래 좌 우 사용 가능
+5. 레이아웃 잡기 위함
+
+- inline : span, img
+1. 필요한 만큼의 너비만 사용
+2. 크기를 지정할 수 없다
+3. 수평으로 쌓인다
+4. margin padding 좌 우 만 사용가능
+5. 텍스트 다룰 때
+
+article (block)
+독립적으로 구분되거나 재사용 가능한 영역을 설정
+주로 기사나 블로그 
+h 테그 작성시간을 time 의 datetime속성으로 작성
+
+section (block)
+문서의 일반적인 영역을 설정
+
+aside (block)
+문서의 별도 컨텐츠를 설정 ex) 사이드바
+
+nav (block)
+다른 페이지 링크를 제공하는 영역
+보통메뉴 home, about, contact
+
+address (block)
+주소, 전화번호 등 
+
+<ol><ul> (block)
+<li> block요소처럼 사용됨(부모가 block)
+li 는 ul,li 에 자식으로만 사용 가능
+
+p (block) paragraph
+하나의 문단을 설정 

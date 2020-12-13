@@ -1,0 +1,25 @@
+.container {
+    border: 4px solid;
+    display: flex;
+}
+.container .item {
+    height: 100px;
+    background: tomato;
+    border: 4px dashed red;
+    border-radius: 10px;
+}
+.item1 {
+    flex-grow: 1;
+}
+.item2 {
+    width: 100px;
+}
+
+/* 
+flex-items
+order : item의 순서를 설정 숫자가 클수록 순서가 밀림 음수 허용. 같으면 html 구조순 기본값 0
+flex-grow
+컨테이너 안에서 너비 비율을 설정
+flex-shrink
+item 이 감소하는 너비의 비율
+*/

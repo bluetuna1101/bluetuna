@@ -1,0 +1,58 @@
+.container {
+    height: 400px;
+    border : 4px solid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+.container .item {
+    width: 120px;
+    height: 100px;
+    background: tomato;
+    border: 4px dashed red;
+    border-radius: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*inline : 수평으로 쌓이지만 , 가로값과 세로값을 가질 수 없음 그래서 
+inline-block 을 하면 블럭처럼 값을 메길 수 있음. 하지만 글자 취급되면서 띄어쓰기가 됨 따라서 font-size 를 0 으로 해줘야한다
+float 은 요소가 붕 뜨기 때문에 컨테이너가 각각 요소를 감싸지 못하게됨 따라서 clearfix라는 개념을 정의해서 컨테이너가 감쌀수 있게 해야한다*/
+
+/* display flex vs inline-flex 
+컨테이너를 블록으로 vs 컨테이너를 인라인요소로 */
+
+/* flex direction
+row : 수평
+column : 수직 
+
+주축 : main-axis 교차축 : cross-axis
+row 에서는 수평선이 주축 column 에서는 수직선 
+시작점 : flex-start 끝점 : flex-end
+row 에서는 시작점은 왼쪽 column 에서는 최상단
+교차축의 시작점 끝점은 reverse의 영향을 받지 않는다 */
+
+/* flex-wrap
+nowrap : 모든 items를 여러 줄로 묶지 않음(기본값)
+wrap : items를 여러 줄로 묶음
+wrap-reverse : items를 wrap 역방향으로 묶음 */
+
+/* justify-content
+주축(main-axix)의 정렬방법을 설정
+flex-start : 주축의 시작에서 정렬 - 왼쪽정렬(row)(default)
+flex-end : 주축의 끝점에서 정렬 -오른쪽정렬(row)
+center : 가운대로
+space-between : 처음과 끝을 두고 각 간격 동일하게
+space-around : 여백을 각각 아이탬에 균등하게 */
+
+/* align-content
+교차축(cross-axix)의 정렬방법을 설정
+@ flex-wrap을 통해 items가 여러줄 이고 여백이 있을 경우만 사용 가능. 한줄일 경우 align-items를 사용
+strech : container 의 교차축을 채우기 위해 itmes를 늘림(기본값)
+
+align-items
+교차축(cross-axix)d의 정렬방법을 설정
+@ align-itmes 를 사용하려면 align-content 속성을 strech로 설정해야 함
+basline : items를 문자 기준선에 정렬
