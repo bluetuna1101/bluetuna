@@ -1,1 +1,6 @@
+IE error
 
+git hub 돌려서 확인 (git checkout commitID)
+
+~/plugins/vue2-editor 오류로 확인
+nuxt 에서 전역으로 플러그인을 불러와서 모든페이지가 오류가 났었음
