@@ -1,0 +1,72 @@
+
+
+div.cardContainer {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+}
+
+div.cardContainer div {
+  height: inherit;
+  width: inherit;
+  color: #FFF;
+  font-size: 24px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: all 1.5s;
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.red {
+  background-color: Red;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: Green;
+}
+
+.skyblue {
+  background-color: skyblue;
+}
+
+.darkblue {
+  background-color: darkblue;
+}
+
+div.cardContainer div:last-child {
+  position: relative;
+  top: -200px;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+div.cardContainer:hover div:first-child {
+  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+}
+
+div.cardContainer:hover div:last-child {
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+}
