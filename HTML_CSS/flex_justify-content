@@ -1,0 +1,27 @@
+상황
+WARNING in ./css/common.css (./node_modules/css-loader/dist/cjs.js??ref--3-oneOf-1-1!./node_modules/postcss-loader/src??ref--3-oneOf-1-2!./css/common.css)
+Module Warning (from ./node_modules/postcss-loader/src/index.js):
+Warning
+
+(203:29) start value has mixed support, consider using flex-start instead
+ @ ./css/common.css 4:14-158
+ @ ./.nuxt/App.js
+ @ ./.nuxt/index.js
+ @ ./.nuxt/server.js
+ @ multi /usr/local/share/.config/yarn/global/node_modules/@nuxt/components/lib/installComponents.js ./.nuxt/server.js
+
+해당 에러 코드
+label.custom {display: flex;justify-content: start;align-items: center;}
+
+
+justify-content 란
+justify-content 주 축(main-axis)의 정렬 방법을 설정
+
+flex-start : 기본 설정으로, 플렉스 요소는 플렉스 컨테이너의 앞쪽에서부터 배치(default)
+
+
+-> 내생각 : 이미 display 가 flex로 선언되어있고 container에 justify-content로 속성을 부여하면 flex-start가 기본값으로 들어간다.
+하지만 justify-content: start로 시작값을 혼용 지정을해줘서 에러가 난거같다.
+
+해결법 : justify-content: start; -> justify-content: flex-start;
+
