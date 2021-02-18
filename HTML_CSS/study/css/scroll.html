@@ -1,0 +1,141 @@
+<!doctype html>
+<head>
+<meta charset="utf-8" />
+<title>http://www.blueb.co.kr</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<style>
+html, body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	padding: 0;
+	margin: 0;
+	color: #333;
+}
+
+a { color: #141478; text-decoration: none; }
+a:hover { color: #0099ff; }
+
+#page {
+	width: 500px;
+	margin: 0 auto;
+	background-color: #FFF;
+	margin-bottom: 50px;
+}
+
+}
+.highlight {
+	font-size: 50px;
+	color: #0099ff;
+}
+h1, h2 {
+	color: #333;
+	text-align: center;	
+}
+h2{
+	text-align: right;
+	padding: 10px 0px;
+}
+
+.bar {
+	background-color: #111;
+	color: #f0f0f0;
+	box-shadow: 0px 0px 2px #333;
+	line-height: 25px;
+	padding: 0px 20px;
+}
+.bar a {
+	color: #DDD;
+}
+.bar a:hover {
+	color: #FFFFFF;
+}
+
+.ticker {
+	width: 500px;
+	height: 40px;
+	overflow: hidden;
+	border: 1px solid #DDD;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #DDD;
+}
+
+#ticker_02 {
+	height: 120px;
+}
+
+.ticker li {
+	height: 30px;
+	border-bottom: 1px dotted #DDD;
+	padding: 5px;
+	margin: 0px 5px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="page">
+
+	<h2>Example 01 [베스트글 스크롤 만들기]</h2>
+	<ul id="ticker_01" class="ticker">
+
+		<li>1. 베스트글!</li>
+		<li>2. 베스트글!</li>
+		<li>3. 베스트글!</li>
+		<li>4. 베스트글!</li>
+	</ul>
+
+
+	<h2>Example 02 [3 news always visible]</h2>
+
+	<ul id="ticker_02" class="ticker">
+		<li><a href="#">jqBarGraph</a> is jQuery plugin that gives you freedom to easily display your data as graphs. There are three types of graphs: simple, multi and stacked.</li>
+		<li>Learn how to create <a href="#">image gallery in 4 lines of Jquery</a></li>
+		<li><a href="#">jqFancyTransitions</a> is easy-to-use jQuery plugin for displaying your photos as slideshow with fancy transition effects.</li>
+		<li>
+			<a href="#">mooBarGraph</a> is AJAX graph plugin for MooTools which support two types of graphs, simple bar and stacked bar graph.
+		</li>
+	</ul>
+
+	<h2>Example 03 [changing opacity of first news]</h2>
+	<ul id="ticker_03" class="ticker">
+		<li><a href="#">jqBarGraph</a> is jQuery plugin that gives you freedom to easily display your data as graphs. There are three types of graphs: simple, multi and stacked.</li>
+		<li>Learn how to create <a href="#">image gallery in 4 lines of Jquery</a></li>
+		<li><a href="#">jqFancyTransitions</a> is easy-to-use jQuery plugin for displaying your photos as slideshow with fancy transition effects.</li>
+		<li><a href="#">mooBarGraph</a> is AJAX graph plugin for MooTools which support two types of graphs, simple bar and stacked bar graph.</li>
+	</ul>	
+
+</div>
+
+
+<script>
+
+	function tick(){
+		$('#ticker_01 li:first').slideUp( function () { $(this).appendTo($('#ticker_01')).slideDown(); });
+	}
+	setInterval(function(){ tick () }, 5000);
+
+
+	function tick2(){
+		$('#ticker_02 li:first').slideUp( function () { $(this).appendTo($('#ticker_02')).slideDown(); });
+	}
+	setInterval(function(){ tick2 () }, 3000);
+
+
+	function tick3(){
+		$('#ticker_03 li:first').animate({'opacity':0}, 200, function () { $(this).appendTo($('#ticker_03')).css('opacity', 1); });
+	}
+	setInterval(function(){ tick3 () }, 4000);	
+
+
+
+</script>
+
+</body>
+</html>
