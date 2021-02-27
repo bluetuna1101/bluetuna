@@ -1,0 +1,16 @@
+alias 설정 
+~/.gitconfig 에서 설정 가능하다
+
+log 
+l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+
+fzf를 사용하면 선택 ui를 추가할 수 있어 더 편리한 alias를 만들 수 있다.
+brew install fzf
+
+
+ui 로 체크아웃 하기
+    ch = "!git checkout $(git branch -vv | grep -v '^\\*' | fzf | awk '{print $1}')"
+    ch = "!git checkout $(git branch | fzf)"
+
+add
+    a = "!git add $(git status -s | fzf -m | awk '{print $2}')"
