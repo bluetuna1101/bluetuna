@@ -68,4 +68,10 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+// translate(x축 y축) 이동 rotate (deg만큼 기울이기)
+.sec5_img_8_move {
+  transform: translate(-200px, -200px) rotate(-18deg);
+  opacity: 0;
+}
+</style>
