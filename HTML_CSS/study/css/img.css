@@ -1,0 +1,7 @@
+1. 좌,
+우 바꾸기 - <img src="이미지 주소"style="filter:fliph()">2. 상,
+하 바꾸기 -<img src="이미지 주소"style="filter:flipv()">3. 이미지를 흑백으로 - <img src="이미지 주소"style="filter:gray()">4. 이미지에 물결효과 - <img src="이미지 주소"
+
+style="filter:wave(strength=5,freq=3,lightstrength=10,phase=25,add=0)">5. 중심부터 원 모양으로 이미지 보이기 <img src="이미지 주소"
+
+style="filter:alpha(opacity=100, style=2, finishopacity=0)">6. 이미지 색 반전 - <img src="이미지 주소"style="filter:invert()">7. 이미지를 흑백으로 - <img src="이미지 주소"style="filter:xray()">
