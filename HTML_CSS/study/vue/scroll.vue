@@ -12,8 +12,9 @@ export default {
 
   methods: {
     handleScroll() {
+      // scroll 값을 숫자로 넣어줘도 되지만 모바일 패드 등 스크롤의 숫자 위치는 달라질 수 있기 때문에 차이를 줘서 차이값으로 계산을 해줘야 한다
       // document.querySelector('#section2').offsetHeight ** section2 height나옴
-      // window.pageYOffset **지금 내 위치
+      // window.pageYOffset **지금 내 위치;ㅣ.........................................................
       // window.scrollY > section3 + window.pageYOffset ? console.log('넘었다!!!') : ''
       const section1 = document
         .querySelector("#section1")
