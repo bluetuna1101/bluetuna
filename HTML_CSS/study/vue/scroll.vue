@@ -22,6 +22,7 @@ export default {
       // scroll 감지해서 클래스를 더하거나 제거하기
       if (section1 < -12) {
         document.querySelector("#start_button").classList.add("start_button_mo")
+        // classList.add remove 외에 toggle을 사용하면 있으면 제거하고 없으면 추가를 해줄 수 있다.
       } else if (section1 > -12) {
         document
           .querySelector("#start_button")

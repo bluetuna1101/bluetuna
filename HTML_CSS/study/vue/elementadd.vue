@@ -7,6 +7,7 @@
 <script>
 export default {
   methods: {
+    //
     createChat(e) {
       let chatBubble = document.createElement("li")
       chatBubble.classList.add("user_input")
