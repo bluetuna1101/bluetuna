@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .relative {
+      position: relative;
+    }
+    .absolute {
+      position: absolute;
+    }
+    .fixed {
+      position: fixed;
+    }
+    /* 고정하고싶은 div 위에 엡솔루트로 띄워준다음 엡솔루트값으로 위치를 조절해준다.
+     그러면 fixed div도 마치 absolute 처럼 상위 relative div를 따라다니게 할 수 있다 */
+  </style>
+</head>
+<body>
+  <div class="relative">
+    <div class="absolute">
+      <div class="fixed">
+        고정입니다
+      </div>
+    </div>
+  </div>
+</body>
+</html>
