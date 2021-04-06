@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  button {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #ccc;
+    width: 212px;
+    padding: 17px 0px;
+    border-radius: 10px;
+    margin-bottom: 90px;
+    position: relative;
+    overflow: hidden;
+  }
+  button:hover .wave {
+    top: -100px;
+  }
+  .wave {
+    position: absolute;
+    top: -300px;
+    left: 40%;
+    background: #55d6ff;
+    width: 300px;
+    height: 300px;
+    margin-left: -150px;
+    margin-bottom: -301px;
+    transform-origin: 50% 50%;
+    border-radius: 50%;
+    transition: all 0.9s;
+    mix-blend-mode: lighten;
+  }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <button>
+    파도치는 버튼
+    <span class="wave"></span>
+  </button>
+</body>
+</html>
