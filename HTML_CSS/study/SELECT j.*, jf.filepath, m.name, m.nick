@@ -1,0 +1,8 @@
+SELECT j.*, jf.filepath, m.name, m.nick
+FROM job j 
+  LEFT JOIN  job_files jf ON j.logo_img = jf.idx
+  ,member m
+  WHERE  
+  j.member_idx = m.idx 
+  ORDER BY j.idx DESC 
+  ;
